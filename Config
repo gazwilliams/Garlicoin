@@ -1,0 +1,7 @@
+sudo git clone https://github.com/tpruvot/cpuminer-multi
+cd cpuminer-multi
+sudo apt-get install automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make g++
+sudo apt-get update
+sudo ./autogen.sh
+sudo ./build.sh
+./cpuminer --algo=scrypt:2048 -o stratum+tcp://us.pool.garlicsoup.xyz:3333 -u GZBPbSmaqiaqaqvizNJQo8Sq2Lzi5dizqc
